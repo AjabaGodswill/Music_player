@@ -30,20 +30,20 @@
 
             <div class="slider-container">
                 <ion-icon name="volume-low"></ion-icon>
-                <input type="range" min="1" max="99" class="volume-slider" onchange="setVolume">
+                <input type="range" min="1" max="99" class="volume-slider" onchange="setVolume()">
                 <ion-icon name="volume-high"></ion-icon>
             </div>
 
             <div class="buttons">
                 <div class="random-track" onclick="randomTrack()">
-                    <ion-icon name="shuffle"></ion-icon>
+                    <ion-icon name="shuffle" class="fa random"></ion-icon>
                 </div>
 
                 <div class="prev-track" onclick="prevTrack()">
                     <ion-icon name="play-skip-back"></ion-icon>
                 </div>
 
-                <div class="playpause-track">
+                <div class="playpause-track" onclick="playpauseTrack()">
                     <ion-icon name="play-circle" id="play-btn"></ion-icon>
                 </div>
 
